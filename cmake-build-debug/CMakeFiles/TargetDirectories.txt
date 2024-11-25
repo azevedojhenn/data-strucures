@@ -1,0 +1,3 @@
+/home/jhennifer/Repositories/ds-third-period/cmake-build-debug/CMakeFiles/ds_third_period.dir
+/home/jhennifer/Repositories/ds-third-period/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jhennifer/Repositories/ds-third-period/cmake-build-debug/CMakeFiles/rebuild_cache.dir

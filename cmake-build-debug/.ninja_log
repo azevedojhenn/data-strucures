@@ -1,0 +1,11 @@
+# ninja log v6
+1	14	1732392100015429602	CMakeFiles/ds_third_period.dir/CircList/CircList.c.o	346c1adadd552f0d
+1	50	1732449073869159291	CMakeFiles/ds_third_period.dir/LinkedList/LinkedList.c.o	da13921a60b0074b
+2	30	1732466303884573128	CMakeFiles/ds_third_period.dir/LinkedList/testing/main.c.o	dd0daad69ca0e9f5
+1	29	1732449073869159291	CMakeFiles/ds_third_period.dir/LinkedList/main.c.o	3e1094de49eee0ee
+50	78	1732449073918153163	ds_third_period	db15347829492a7b
+4	20	1732456534709712955	CMakeFiles/ds_third_period.dir/CircList/TDA/CircList.c.o	fd3a5ac0346dc511
+1	25	1732466303883573124	CMakeFiles/ds_third_period.dir/LinkedList/TDA/main.c.o	315bc2d72caf33db
+2	35	1732466303884573128	CMakeFiles/ds_third_period.dir/LinkedList/1-_InteirosBacanas/InteirosBacanas.c.o	cf001e49bef006c0
+1	52	1732466303884573128	CMakeFiles/ds_third_period.dir/LinkedList/TDA/LinkedList.c.o	dc0959e1363b575e
+2	30	1732466303884573128	CMakeFiles/ds_third_period.dir/LinkedList/1-_InteirosBacanas/main.c.o	cdca2afb2cc95f65
