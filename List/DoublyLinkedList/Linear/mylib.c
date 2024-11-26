@@ -42,8 +42,7 @@ TDLList* TDLList_create()
 bool TDLList_insert(TDLList* list, const int data)
 {
     if (!list) return false;
-    TNode* current = list->head;
-    if (!current) // se a lista estiver vazia
+    if (!list->head) // se a lista estiver vazia
     {
         list->head = TNode_create(data); // list->head->next e prev = NULL
         list->tail = list->head; // list->tail->next e prev = NULL
@@ -58,6 +57,52 @@ bool TDLList_insert(TDLList* list, const int data)
     new_node->prev = list->tail;
     list->tail = new_node;
     return true;
+}
+
+bool TDLList_insert_sorted(TDLList* list, const int data)
+{
+    if (!list) return false;
+    if (!list->head) return TDLList_insert(list, data);
+
+    TNode* new_node = TNode_create(data);
+    TNode* current = list->head;
+    if (!new_node) return false;
+
+    while (current)
+    {
+        // encontrei o lugar para inserir o novo nó
+        if (current->data > data)
+        {
+            /* Como estou verificando se o nó atual é maior que o dado,
+             * então, o novo nó deve ser inserido antes do nó atual.
+             * Desse jeito, inserir no primeiro nó daria erro, pois não há anterior.
+             */
+
+            new_node->next = current; // null<-head->a...  null<-NEW_NODE"->a"->b
+            if (current == list->head)
+            {
+                current->prev = new_node; // (a)
+                list->head = new_node; // (b)
+            }
+            else
+            {
+                new_node->prev = current->prev; // (b)
+                current->prev->next = new_node; // (c)
+                current->prev = new_node; // (a)
+            }
+            return true;
+        }
+
+        // encontrei o lugar para inserir o novo nó
+        if (!current->next)
+        {
+            current->next = new_node;
+            new_node->prev = current;
+            list->tail = new_node;
+            return true;
+        }
+        current = current->next;
+    }
 }
 
 bool TDLList_remove(TDLList* list, const int data)

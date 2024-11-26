@@ -28,5 +28,19 @@ int main(void)
     printf("Remove %d: ", remove);
     TDLList_remove(list, remove);
     TDLList_print(list);
+
+    for (int i = 3; i <= 10; ++i)
+    {
+        if (!TDLList_insert_sorted(list, i))
+        {
+            printf("Erro ao inserir o elemento %d\n", i);
+            return 1;
+        }
+    }
+    printf("Nova lista(3...10) ordenada: ");
+    TDLList_print(list);
+    TDLList_insert_sorted(list, 1);
+    printf("Adicionei 1: ");
+    TDLList_print(list);
     return 0;
 }
