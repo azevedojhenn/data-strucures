@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+// TDLList stands for "Type Doubly Linked List"
 typedef struct _doublyLinkedList TDLList;
 
 /**
