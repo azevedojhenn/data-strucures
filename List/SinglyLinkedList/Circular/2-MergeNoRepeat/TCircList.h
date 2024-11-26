@@ -4,6 +4,7 @@
 
 #ifndef TCIRCLIST_H
 #define TCIRCLIST_H
+
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -36,7 +37,5 @@ void TCircList_print(const TCircList* list);
  * @return pointer to the merged list
  */
 bool TCircList_mergeNoRepeat(const TCircList* list1, const TCircList* list2);
-
-
 
 #endif //TCIRCLIST_H

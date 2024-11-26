@@ -3,17 +3,35 @@ project(ds_third_period C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ds_third_period "LinkedList/0- TDA/main.c"
-        "LinkedList/0- TDA/LinkedList.c"
-        "LinkedList/0- TDA/LinkedList.h"
-        "CircList/0- TDA/CircList.c"
-        "CircList/0- TDA/CircList.h"
-        "LinkedList/1- InteirosBacanas/mylib.c"
-        "LinkedList/1- InteirosBacanas/mylib.h"
-        "LinkedList/1- InteirosBacanas/main.c"
-        "LinkedList/2- OndeEstáOLoop/mylib.c"
-        "LinkedList/2- OndeEstáOLoop/mylib.h"
-        "LinkedList/2- OndeEstáOLoop/main.c"
-        "CircList/0- TDA/main.c"
-        "CircList/1- EDmundo/mylib.c"
-        "CircList/1- EDmundo/mylib.h")
+add_executable(ds_third_period "List/SinglyLinkedList/Circular/0-TDA/CircList.c"
+                                "List/SinglyLinkedList/Circular/0-TDA/CircList.h"
+                                "List/SinglyLinkedList/Circular/0-TDA/main.c"
+                                "List/SinglyLinkedList/Circular/1-EDmundo/main.c"
+                                "List/SinglyLinkedList/Circular/1-EDmundo/mylib.c"
+                                "List/SinglyLinkedList/Circular/1-EDmundo/mylib.h"
+                                "List/SinglyLinkedList/Circular/2-MergeNoRepeat/TCircList.c"
+                                "List/SinglyLinkedList/Circular/2-MergeNoRepeat/TCircList.h"
+                                "List/SinglyLinkedList/Linear/0-TDA/LinkedList.c"
+                                "List/SinglyLinkedList/Linear/0-TDA/LinkedList.h"
+                                "List/SinglyLinkedList/Linear/0-TDA/main.c"
+                                "List/SinglyLinkedList/Linear/1-InteirosBacanas/main.c"
+                                "List/SinglyLinkedList/Linear/1-InteirosBacanas/mylib.c"
+                                "List/SinglyLinkedList/Linear/1-InteirosBacanas/mylib.h"
+                                "List/SinglyLinkedList/Linear/2-MergeNoRepeat/TLinkedList.c"
+                                "List/SinglyLinkedList/Linear/2-MergeNoRepeat/TLinkedList.h"
+                                "List/SinglyLinkedList/Linear/3-OndeEstáOLoop/main.c"
+                                "List/SinglyLinkedList/Linear/3-OndeEstáOLoop/mylib.c"
+                                "List/SinglyLinkedList/Linear/3-OndeEstáOLoop/mylib.h"
+                                "Queue/main.c"
+                                "Stack/Exercises/ex1.c"
+                                "List/StaticList/main.c"
+        List/DoublyLinkedList/Linear/mylib.c
+        List/DoublyLinkedList/Linear/mylib.h
+        List/DoublyLinkedList/Linear/main.c
+        Stack/StaticStack.c
+        Stack/StaticStack.h
+        Stack/DynamicStack.c
+        Stack/DynamicStack.h
+        Stack/Exercises/ex2.c
+)
+

@@ -1,5 +1,5 @@
 //
-// Created by jhennifer on 24/11/24.
+// Created by Prof. Rafael.
 //
 
 #include "../StaticStack.h"
