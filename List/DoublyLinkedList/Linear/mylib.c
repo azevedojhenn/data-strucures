@@ -93,7 +93,8 @@ bool TDLList_insert_sorted(TDLList* list, const int data)
             return true;
         }
 
-        // encontrei o lugar para inserir o novo nó
+        // não encontrei o lugar para inserir o novo nó
+        // então insere no final da lista
         if (!current->next)
         {
             current->next = new_node;
@@ -103,6 +104,7 @@ bool TDLList_insert_sorted(TDLList* list, const int data)
         }
         current = current->next;
     }
+    return false;
 }
 
 bool TDLList_remove(TDLList* list, const int data)
