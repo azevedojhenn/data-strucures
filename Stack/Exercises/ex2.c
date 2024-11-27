@@ -2,15 +2,15 @@
 // Created by Prof. Rafael.
 //
 
-#include "../StaticStack.h"
-#include "../DynamicStack.h"
+#include "../Static/StaticStack.h"
+#include "../Dynamic/DynamicStack.h"
 #include <string.h>
 
 int main(){
     //Ler a string
     char string[1024];
     fgets(string, 1024, stdin);
-    SStack *stack = SStack_create();
+    DStack *stack = SStack_create();
     for(int i = 0; i <strlen(string); i++){
         if(string[i] == '\n' || string[i] == '\r' || string[i]=='\0')
             break;
