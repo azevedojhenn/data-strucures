@@ -27,7 +27,7 @@ TNode* TNode_create(const int data)
     return node;
 }
 
-DQueue* SQueue_create()
+DQueue* DQueue_create()
 {
     DQueue *queue = malloc(sizeof(DQueue));
     if (queue)
@@ -38,7 +38,7 @@ DQueue* SQueue_create()
     return queue;
 }
 
-bool SQueue_enqueue(DQueue *queue, const int data)
+bool DQueue_enqueue(DQueue *queue, const int data)
 {
     if (!queue) return false;
     TNode *new_node = TNode_create(data);
@@ -56,7 +56,7 @@ bool SQueue_enqueue(DQueue *queue, const int data)
     return true;
 }
 
-bool SQueue_dequeue(DQueue *queue, int *first_data)
+bool DQueue_dequeue(DQueue *queue, int *first_data)
 {
     if (!queue || !queue->tail) return false;
     TNode *old_begin = queue->tail->next;
@@ -70,7 +70,7 @@ bool SQueue_dequeue(DQueue *queue, int *first_data)
     return true;
 }
 
-bool SQueue_head(const DQueue *queue, int *first_data)
+bool DQueue_head(const DQueue *queue, int *first_data)
 {
     if (!queue || !queue->tail) return false;
     *first_data = queue->tail->next->data;
@@ -78,7 +78,7 @@ bool SQueue_head(const DQueue *queue, int *first_data)
     return true;
 }
 
-bool SQueue_destroy(DQueue **queue)
+bool DQueue_destroy(DQueue **queue)
 {
     if (!queue || !*queue) return false;
     TNode *aux = (*queue)->tail;
@@ -95,10 +95,10 @@ bool SQueue_destroy(DQueue **queue)
 
 // bool SQueue_isFull(const DQueue *queue);
 
-bool SQueue_isEmpty(const DQueue *queue) {
+bool DQueue_isEmpty(const DQueue *queue) {
     return !queue || !queue->tail;
 }
 
-int SQueue_size(const DQueue *queue) {
+int DQueue_size(const DQueue *queue) {
     return queue ? queue->size : -1;
 }

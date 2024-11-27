@@ -15,7 +15,7 @@ typedef struct _dynamicQueue DQueue;
  * Creates a dynamic queue.
  * @return Pointer to the created queue.
  */
-DQueue* SQueue_create();
+DQueue* DQueue_create();
 
 /**
  * Adds a new element to the queue.
@@ -23,7 +23,7 @@ DQueue* SQueue_create();
  * @param data Element to be added.
  * @return True if the element was successfully added, false otherwise.
  */
-bool SQueue_enqueue(DQueue *queue, int data);
+bool DQueue_enqueue(DQueue *queue, int data);
 
 /**
  * Removes an element from the queue.
@@ -31,7 +31,7 @@ bool SQueue_enqueue(DQueue *queue, int data);
  * @param first_data Removed element.
  * @return True if the element was successfully removed, false otherwise.
  */
-bool SQueue_dequeue(DQueue *queue, int *first_data);
+bool DQueue_dequeue(DQueue *queue, int *first_data);
 
 /**
  * Returns the first element of the queue.
@@ -39,34 +39,34 @@ bool SQueue_dequeue(DQueue *queue, int *first_data);
  * @param first_data First element.
  * @return True if the element was successfully returned, false otherwise.
  */
-bool SQueue_head(const DQueue *queue, int *first_data);
+bool DQueue_head(const DQueue *queue, int *first_data);
 
 /**
  * Destroys the queue.
  * @param queue Queue to be destroyed.
  * @return True if the queue was successfully destroyed, false otherwise.
  */
-bool SQueue_destroy(DQueue *queue);
+bool DQueue_destroy(DQueue **queue);
 
 /**
  * Checks if the queue is full.
  * @param queue Queue to be checked.
  * @return True if the queue is full, false otherwise.
  */
-bool SQueue_isFull(const DQueue *queue);
+bool DQueue_isFull(const DQueue *queue);
 
 /**
  * Checks if the queue is empty.
  * @param queue Queue to be checked.
  * @return True if the queue is empty, false otherwise.
  */
-bool SQueue_isEmpty(const DQueue *queue);
+bool DQueue_isEmpty(const DQueue *queue);
 
 /**
  * Returns the size of the queue.
  * @param queue Queue to be checked.
  * @return Size of the queue.
  */
-int SQueue_size(const DQueue *queue);
+int DQueue_size(const DQueue *queue);
 
 #endif //DYNAMICQUEUE_H
