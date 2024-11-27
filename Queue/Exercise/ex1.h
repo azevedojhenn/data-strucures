@@ -8,15 +8,18 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-typedef struct _typeQueue Fila;
-typedef struct _typePix Pix;
+// TQueue stands for "Type Dynamic Queue"
+typedef struct _typeQueue TQueue;
+
+// TPix stands for "Type Pix"
+typedef struct _typePix TPix;
 
 /**
  * Cria uma fila dinâmica.
  * @param size Tamanho da fila.
  * @return Ponteiro para a fila criada.
  */
-Fila* Fila_create(int size);
+TQueue* TQueue_create(int size);
 
 /**
  * Cria um novo elemento do tipo Pix.
@@ -25,7 +28,7 @@ Fila* Fila_create(int size);
  * @param valor Valor do arco.
  * @return Ponteiro para o novo elemento.
  */
-Pix* Pix_create(int id_orig, int id_dest, float valor);
+TPix* TPix_create(int id_orig, int id_dest, float valor);
 
 /**
  * Adiciona um novo elemento na fila.
@@ -33,7 +36,7 @@ Pix* Pix_create(int id_orig, int id_dest, float valor);
  * @param pix Elemento a ser adicionado.
  * @return True se o elemento foi adicionado com sucesso, false caso contrário.
  */
-bool Fila_enqueue(Fila *fila, Pix *pix);
+bool TQueue_enqueue(TQueue *fila, TPix *pix);
 
 /**
  * Remove um elemento da fila.
@@ -41,33 +44,33 @@ bool Fila_enqueue(Fila *fila, Pix *pix);
  * @param temp Elemento removido.
  * @return True se o elemento foi removido com sucesso, false caso contrário.
  */
-bool Fila_dequeue(Fila *fila, Pix *temp);
+bool TQueue_dequeue(TQueue *fila, TPix *temp);
 
 /**
  * Destrói a fila.
  * @param fila Fila a ser destruída.
  * @return True se a fila foi destruída com sucesso, false caso contrário.
  */
-bool Fila_destroy(Fila *fila);
+bool TQueue_destroy(TQueue *fila);
 
 /**
  * Verifica se a fila está cheia.
  * @param fila Fila a ser verificada.
  * @return True se a fila está cheia, false caso contrário.
  */
-bool isFull(const Fila *fila);
+bool TQueue_isFull(const TQueue *fila);
 
 /**
  * Verifica se a fila está vazia.
  * @param fila Fila a ser verificada.
  * @return True se a fila está vazia, false caso contrário.
  */
-bool isEmpty(const Fila *fila);
+bool TQueue_isEmpty(const TQueue *fila);
 
 /**
  * Imprime um elemento do tipo Pix.
  * @param pix Elemento a ser impresso.
  */
-void print(const Pix *pix);
+void TPix_print(const TPix *pix);
 
 #endif //DYNAMICQUEUE_H
