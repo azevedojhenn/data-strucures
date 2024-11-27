@@ -151,11 +151,11 @@ build CMakeFiles/ds_third_period.dir/Stack/Exercises/ex2.c.o: C_COMPILER__ds_thi
   OBJECT_DIR = CMakeFiles/ds_third_period.dir
   OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Stack/Exercises
 
-build CMakeFiles/ds_third_period.dir/Queue/DynamicQueue.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/DynamicQueue.c || cmake_object_order_depends_target_ds_third_period
-  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/DynamicQueue.c.o.d
+build CMakeFiles/ds_third_period.dir/Queue/Exercises/ex1.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/Exercises/ex1.c || cmake_object_order_depends_target_ds_third_period
+  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/Exercises/ex1.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/ds_third_period.dir
-  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue
+  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue/Exercises
 
 build CMakeFiles/ds_third_period.dir/Stack/Static/StaticStack.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Stack/Static/StaticStack.c || cmake_object_order_depends_target_ds_third_period
   DEP_FILE = CMakeFiles/ds_third_period.dir/Stack/Static/StaticStack.c.o.d
@@ -181,6 +181,30 @@ build CMakeFiles/ds_third_period.dir/Stack/Dynamic/main.c.o: C_COMPILER__ds_thir
   OBJECT_DIR = CMakeFiles/ds_third_period.dir
   OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Stack/Dynamic
 
+build CMakeFiles/ds_third_period.dir/Queue/Static/StaticQueue.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/Static/StaticQueue.c || cmake_object_order_depends_target_ds_third_period
+  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/Static/StaticQueue.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/ds_third_period.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue/Static
+
+build CMakeFiles/ds_third_period.dir/Queue/Static/main.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/Static/main.c || cmake_object_order_depends_target_ds_third_period
+  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/Static/main.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/ds_third_period.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue/Static
+
+build CMakeFiles/ds_third_period.dir/Queue/Dynamic/DynamicQueue.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/Dynamic/DynamicQueue.c || cmake_object_order_depends_target_ds_third_period
+  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/Dynamic/DynamicQueue.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/ds_third_period.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue/Dynamic
+
+build CMakeFiles/ds_third_period.dir/Queue/Dynamic/main.c.o: C_COMPILER__ds_third_period_unscanned_Debug /home/jhennifer/Repositories/ds-third-period/Queue/Dynamic/main.c || cmake_object_order_depends_target_ds_third_period
+  DEP_FILE = CMakeFiles/ds_third_period.dir/Queue/Dynamic/main.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/ds_third_period.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_third_period.dir/Queue/Dynamic
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ds_third_period
@@ -189,7 +213,7 @@ build CMakeFiles/ds_third_period.dir/Stack/Dynamic/main.c.o: C_COMPILER__ds_thir
 #############################################
 # Link the executable ds_third_period
 
-build ds_third_period: C_EXECUTABLE_LINKER__ds_third_period_Debug CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/0-TDA/CircList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/0-TDA/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/1-EDmundo/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/1-EDmundo/mylib.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/2-MergeNoRepeat/TCircList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/0-TDA/LinkedList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/0-TDA/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/1-InteirosBacanas/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/1-InteirosBacanas/mylib.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/2-MergeNoRepeat/TLinkedList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/3-OndeEstáOLoop/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/3-OndeEstáOLoop/mylib.c.o CMakeFiles/ds_third_period.dir/Stack/Exercises/ex1.c.o CMakeFiles/ds_third_period.dir/List/StaticList/main.c.o CMakeFiles/ds_third_period.dir/List/DoublyLinkedList/Linear/mylib.c.o CMakeFiles/ds_third_period.dir/List/DoublyLinkedList/Linear/main.c.o CMakeFiles/ds_third_period.dir/Stack/Exercises/ex2.c.o CMakeFiles/ds_third_period.dir/Queue/DynamicQueue.c.o CMakeFiles/ds_third_period.dir/Stack/Static/StaticStack.c.o CMakeFiles/ds_third_period.dir/Stack/Static/main.c.o CMakeFiles/ds_third_period.dir/Stack/Dynamic/DynamicStack.c.o CMakeFiles/ds_third_period.dir/Stack/Dynamic/main.c.o
+build ds_third_period: C_EXECUTABLE_LINKER__ds_third_period_Debug CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/0-TDA/CircList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/0-TDA/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/1-EDmundo/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/1-EDmundo/mylib.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Circular/2-MergeNoRepeat/TCircList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/0-TDA/LinkedList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/0-TDA/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/1-InteirosBacanas/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/1-InteirosBacanas/mylib.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/2-MergeNoRepeat/TLinkedList.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/3-OndeEstáOLoop/main.c.o CMakeFiles/ds_third_period.dir/List/SinglyLinkedList/Linear/3-OndeEstáOLoop/mylib.c.o CMakeFiles/ds_third_period.dir/Stack/Exercises/ex1.c.o CMakeFiles/ds_third_period.dir/List/StaticList/main.c.o CMakeFiles/ds_third_period.dir/List/DoublyLinkedList/Linear/mylib.c.o CMakeFiles/ds_third_period.dir/List/DoublyLinkedList/Linear/main.c.o CMakeFiles/ds_third_period.dir/Stack/Exercises/ex2.c.o CMakeFiles/ds_third_period.dir/Queue/Exercises/ex1.c.o CMakeFiles/ds_third_period.dir/Stack/Static/StaticStack.c.o CMakeFiles/ds_third_period.dir/Stack/Static/main.c.o CMakeFiles/ds_third_period.dir/Stack/Dynamic/DynamicStack.c.o CMakeFiles/ds_third_period.dir/Stack/Dynamic/main.c.o CMakeFiles/ds_third_period.dir/Queue/Static/StaticQueue.c.o CMakeFiles/ds_third_period.dir/Queue/Static/main.c.o CMakeFiles/ds_third_period.dir/Queue/Dynamic/DynamicQueue.c.o CMakeFiles/ds_third_period.dir/Queue/Dynamic/main.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/ds_third_period.dir
   POST_BUILD = :

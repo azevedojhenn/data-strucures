@@ -2,7 +2,7 @@
 // Created by jhennifer on 26/11/24.
 //
 
-#include "DynamicQueue.h"
+#include "ex1.h"
 #include <stdlib.h>
 
 struct _typePix{

@@ -83,7 +83,7 @@ void TCircList_print(const TCircList* list)
         printf("Lista vazia\n");
         return;
     }
-    TNode* current = list->head;
+    const TNode* current = list->head;
     do
     {
         printf("%d ", current->data);

@@ -28,13 +28,19 @@ add_executable(ds_third_period "List/SinglyLinkedList/Circular/0-TDA/CircList.c"
         List/DoublyLinkedList/Linear/mylib.h
         List/DoublyLinkedList/Linear/main.c
         Stack/Exercises/ex2.c
-        Queue/DynamicQueue.c
-        Queue/DynamicQueue.h
+        Queue/Exercises/ex1.c
+        Queue/Exercises/ex1.h
         Stack/Static/StaticStack.c
         Stack/Static/StaticStack.h
         Stack/Static/main.c
         Stack/Dynamic/DynamicStack.c
         Stack/Dynamic/DynamicStack.h
         Stack/Dynamic/main.c
+        Queue/Static/StaticQueue.c
+        Queue/Static/StaticQueue.h
+        Queue/Static/main.c
+        Queue/Dynamic/DynamicQueue.c
+        Queue/Dynamic/DynamicQueue.h
+        Queue/Dynamic/main.c
 )
 
