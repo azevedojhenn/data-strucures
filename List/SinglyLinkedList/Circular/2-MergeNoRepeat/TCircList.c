@@ -75,29 +75,29 @@ TCircList* TCircList_merge_no_repeat(const TCircList* list1,
     TCircList* merged_list = TCircList_create();
     if (!merged_list || !list1 || !list2) return NULL; // se uma das listas não foi alocada
     TNode* current_ml = merged_list->head;
-    TNode* current1 = list1->head;
-    TNode* current2 = list2->head;
-    if (!current_ml || !current1 || !current2) return NULL; // se um deles não for alocado
+    TNode* current_l1 = list1->head;
+    TNode* current_l2 = list2->head;
+    if (!current_ml || !current_l1 || !current_l2) return NULL; // se um deles não for alocado
     if (!list1->head) // se a lista1 está vazia
     {
-        while (current2->next != list2->head) // percorre a lista2 até o final
+        while (current_l2->next != list2->head) // percorre a lista2 até o final
         {
-            TCircList_insert(merged_list, current2->data);
-            current2 = current2->next;
+            TCircList_insert(merged_list, current_l2->data);
+            current_l2 = current_l2->next;
         }
         return merged_list;
     }
 
     // adicionar lista1 na merged_list
-    while (current1->next != list1->head) // percorre a lista1 até o final
+    while (current_l1->next != list1->head) // percorre a lista1 até o final
     {
-        TCircList_insert(merged_list, current1->data);
-        current1 = current1->next;
+        TCircList_insert(merged_list, current_l1->data);
+        current_l1 = current_l1->next;
     }
     {
         while (current_ml->next != merged_list->head)
         {
-            if (current1->data == current_ml->data) break;
+            if (current_l1->data == current_ml->data) break;
             current_ml = current_ml->next;
         }
 

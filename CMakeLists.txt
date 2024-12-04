@@ -42,5 +42,12 @@ add_executable(ds_third_period "List/SinglyLinkedList/Circular/0-TDA/CircList.c"
         Queue/Dynamic/DynamicQueue.c
         Queue/Dynamic/DynamicQueue.h
         Queue/Dynamic/main.c
+        Exams/n1/question1/Deque.c
+        Exams/n1/question1/Deque.h
+        Exams/n1/question3/CaçaPalavras.c
+        Exams/n1/question3/CaçaPalavras.h
+        Exams/n1/question3/main.c
+        Exams/n1/queston4/Stack.c
+        Exams/n1/queston4/Stack.h
 )
 

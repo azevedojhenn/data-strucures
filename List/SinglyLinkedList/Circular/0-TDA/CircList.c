@@ -92,7 +92,6 @@ void TCircList_print(const TCircList* list)
     printf("\n");
 }
 
-
 bool TCircList_destroy(TCircList** list)
 {
     if (!*list) return false; // lista não alocada
