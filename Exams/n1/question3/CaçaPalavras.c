@@ -3,7 +3,7 @@
 //
 
 #include "CaçaPalavras.h"
-#include <stdlib.h>
+// #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
 
@@ -13,13 +13,13 @@ typedef struct node
     struct node* lists[];
 } TNode;
 
-int tentaLetra(const TNode* node, const char* word)
+int tentaLetra(const TNode* position, const char* word)
 {
     // tentar uma direção
     int i;
     for (i = 0; i < 8; i++)
     {
-        const TNode* direction = node;
+        const TNode* direction = position;
         bool round = true;
         for (int j = 0; j < strlen(word); j++)
         {
@@ -30,7 +30,7 @@ int tentaLetra(const TNode* node, const char* word)
             }
             direction = direction->lists[i];
         }
-         if (round) break;;
+         if (round) break;
     }
     return i;
 }
